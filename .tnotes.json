@@ -1,9 +1,7 @@
 {
   "author": "tnotesjs",
   "repoName": "TNotes.vitest",
-  "keywords": [
-    "TNotes.vitest"
-  ],
+  "keywords": ["TNotes.vitest"],
   "ignore_dirs": [
     ".vscode",
     "0000",
@@ -17,7 +15,7 @@
   "rootSidebarDir": "../TNotes/sidebars",
   "root_item": {
     "icon": {
-      "src": "https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/assets/icon--vitest.svg"
+      "src": "https://cdn.jsdelivr.net/gh/tnotesjs/imgs-2026@main/assets/icon--vitest.svg"
     },
     "title": "vitest",
     "completed_notes_count": {
