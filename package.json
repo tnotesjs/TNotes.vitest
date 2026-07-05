@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "scripts": {
+    "tn:build": "                       tnotes --build",
+    "tn:create-notes": "                tnotes --create-notes",
+    "tn:dev": "                         tnotes --dev",
+    "tn:fix-timestamps": "              tnotes --fix-timestamps",
+    "tn:help": "                        tnotes --help",
+    "tn:preview": "                     tnotes --preview",
+    "tn:pull": "                        tnotes --pull",
+    "tn:push": "                        tnotes --push",
+    "tn:update": "                      tnotes --update",
+    "tn:update-completed-count": "      tnotes --update-completed-count"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1",
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.27"
+  },
+  "dependencies": {
+    "@tnotesjs/core": "^0.2.2"
+  }
+}
