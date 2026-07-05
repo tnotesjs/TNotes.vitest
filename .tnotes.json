@@ -1,7 +1,9 @@
 {
   "author": "tnotesjs",
   "repoName": "TNotes.vitest",
-  "keywords": ["TNotes.vitest"],
+  "keywords": [
+    "TNotes.vitest"
+  ],
   "ignore_dirs": [
     ".vscode",
     "0000",
