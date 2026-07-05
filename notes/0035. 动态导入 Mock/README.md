@@ -46,7 +46,7 @@ test('ESM mock', () => {
 
 ## 4. hoisting 行为
 
-`vi.mock` 和 `vi hoisted` 会被提升到文件顶部，在所有 import 之前执行：
+`vi.mock` 和 `vi.hoisted` 会被提升到文件顶部，在所有 import 之前执行：
 
 ```typescript
 // vi.mock 实际执行顺序在 import 之前

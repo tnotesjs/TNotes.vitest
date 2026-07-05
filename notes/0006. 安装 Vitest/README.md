@@ -65,8 +65,8 @@ npm install -D @vitest/coverage-istanbul
 # UI 界面（可选）
 npm install -D @vitest/ui
 
-# 浏览器模式（可选）
-npm install -D @vitest/browser playwright
+# 浏览器模式（可选，推荐使用 npx vitest init browser 自动安装）
+npm install -D @vitest/browser @vitest/browser-playwright
 ```
 
 ## 8. 验证安装
@@ -87,4 +87,4 @@ npx vitest --version
 pnpm add -D vitest
 ```
 
-只需要这一个依赖即可开始编写和运行测试。TypeScript 支持、ESM 支持、路径别名解析等都由 Vitest 内置提供。
+只需要这一个依赖即可开始编写和运行测试。TypeScript 支持、ESM 支持等都由 Vitest 内置提供。Vite 的 `resolve.alias` 路径别名会被自动继承，但 `tsconfig.json` 中的 `paths` 别名需要额外安装 `vite-tsconfig-paths` 插件。

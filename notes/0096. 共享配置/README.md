@@ -107,6 +107,7 @@ export default mergeConfig(
 ```typescript
 // packages/vitest-config/index.ts
 import { defineConfig } from 'vitest/config'
+import { playwright } from '@vitest/browser-playwright'
 
 export const nodeConfig = defineConfig({
   test: { environment: 'node' },
@@ -120,7 +121,7 @@ export const browserConfig = defineConfig({
   test: {
     browser: {
       enabled: true,
-      provider: 'playwright',
+      provider: playwright(),
     },
   },
 })

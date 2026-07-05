@@ -25,7 +25,7 @@
 
 ## 2. 评价
 
-threads 模式是默认选择，启动快且共享进程内存。forks 模式隔离性更好但较慢。vmThreads 提供最强隔离但某些 API 可能不可用。
+forks 模式是默认选择，使用 child_process 实现进程级隔离。threads 模式启动更快且共享进程内存，但隔离性较弱。vmThreads 提供最强隔离但某些 API 可能不可用。
 
 ## 3. pool 选项
 
@@ -37,7 +37,7 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
-    pool: 'threads', // 默认值
+    pool: 'forks', // 默认值，也可选择 'threads'、'vmThreads'、'vmForks'
   },
 })
 ```
@@ -46,13 +46,14 @@ export default defineConfig({
 
 | pool        | 说明                          |
 | ----------- | ----------------------------- |
-| `threads`   | 使用 worker_threads（默认）   |
-| `forks`     | 使用 child_process.fork       |
+| `forks`     | 使用 child_process（默认）    |
+| `threads`   | 使用 worker_threads           |
 | `vmThreads` | 使用 worker_threads + VM 隔离 |
+| `vmForks`   | 使用 child_process + VM 隔离  |
 
 ## 4. threads 模式
 
-`threads` 是默认模式，使用 Node.js 的 `worker_threads`：
+`threads` 使用 Node.js 的 `worker_threads`：
 
 ```typescript
 test: {

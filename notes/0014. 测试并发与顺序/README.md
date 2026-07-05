@@ -128,7 +128,7 @@ export default defineConfig({
 
 ## 8. 线程池配置
 
-Vitest 使用线程池管理并发：
+Vitest 使用进程池管理并发。默认使用 `forks` 模式（基于 `child_process`），也可以切换为 `threads` 模式（基于 `worker_threads`）：
 
 ```typescript
 // vitest.config.ts
@@ -136,7 +136,7 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
-    pool: 'threads',
+    pool: 'threads', // 默认为 'forks'
     poolOptions: {
       threads: {
         minThreads: 1,

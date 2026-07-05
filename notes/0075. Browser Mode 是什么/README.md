@@ -35,12 +35,13 @@ Browser Mode 在真实的浏览器环境中运行测试，而非 jsdom 或 happy
 ```typescript
 // vitest.config.ts
 import { defineConfig } from 'vitest/config'
+import { playwright } from '@vitest/browser-playwright'
 
 export default defineConfig({
   test: {
     browser: {
       enabled: true,
-      provider: 'playwright',
+      provider: playwright(),
       instances: [{ browser: 'chromium' }],
     },
   },

@@ -65,6 +65,8 @@ export default defineWorkspace([
 ## 5. Browser Mode 项目
 
 ```typescript
+import { playwright } from '@vitest/browser-playwright'
+
 export default defineWorkspace([
   {
     name: 'e2e',
@@ -72,7 +74,7 @@ export default defineWorkspace([
     test: {
       browser: {
         enabled: true,
-        provider: 'playwright',
+        provider: playwright(),
         instances: [{ browser: 'chromium' }],
       },
     },

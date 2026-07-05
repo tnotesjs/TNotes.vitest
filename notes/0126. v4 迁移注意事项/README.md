@@ -33,7 +33,7 @@
 
 Vitest v4 的主要破坏性变更：
 
-- 最低 Node.js 版本要求：18+
+- 最低 Node.js 版本要求：>=22.12.0
 - 某些 API 行为变化
 - 配置选项调整
 
@@ -65,11 +65,13 @@ pnpm add -D @vitest/ui@4
 v4 中 Browser Mode 配置变化：
 
 ```typescript
+import { playwright } from '@vitest/browser-playwright'
+
 // v4
 test: {
   browser: {
     enabled: true,
-    provider: 'playwright',
+    provider: playwright(),
     instances: [{ browser: 'chromium' }],
   },
 }
