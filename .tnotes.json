@@ -21,13 +21,11 @@
     },
     "title": "vitest",
     "completed_notes_count": {
-      "26.07": 0
+      "26.07": 0,
+      "26.08": 0
     },
     "details": "Vitest notes",
-    "link": "https://tnotesjs.github.io/TNotes.vitest/",
-    "created_at": 1783221721000,
-    "updated_at": 1783222417000,
-    "days_since_birth": 9869
+    "link": "https://tnotesjs.github.io/TNotes.vitest/"
   },
   "menuItems": [
     {
