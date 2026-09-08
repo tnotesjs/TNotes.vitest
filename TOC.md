@@ -1,5 +1,4 @@
-- TNotes.vitest
-  - [ ] 0001. TNotes.vitest
+- [ ] 0001. TNotes.vitest
 - Vitest 总览
   - [ ] 0002. Vitest 是什么
   - [ ] 0003. Vitest v4 核心能力

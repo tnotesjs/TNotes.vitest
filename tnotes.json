@@ -1,0 +1,20 @@
+{
+  "title": "vitest",
+  "name": "TNotes.vitest",
+  "description": "Vitest notes",
+  "icon": {
+    "src": "https://cdn.jsdelivr.net/gh/tnotesjs/imgs-2026@main/assets/icon--vitest.svg"
+  },
+  "repositoryUrl": "https://github.com/tnotesjs/TNotes.vitest",
+  "port": 10132,
+  "pageUrl": "https://tnotesjs.github.io/TNotes.vitest/",
+  "base": "/TNotes.vitest/",
+  "stats": {
+    "enabled": true,
+    "completedNotesCount": {
+      "26.07": 0,
+      "26.08": 0,
+      "26.09": 0
+    }
+  }
+}
