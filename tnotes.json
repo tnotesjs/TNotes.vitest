@@ -3,7 +3,7 @@
   "name": "TNotes.vitest",
   "description": "Vitest notes",
   "icon": {
-    "src": "https://cdn.jsdelivr.net/gh/tnotesjs/imgs-2026@main/assets/icon--vitest.svg"
+    "src": "../assets/kb-icon.svg"
   },
   "repositoryUrl": "https://github.com/tnotesjs/TNotes.vitest",
   "port": 10132,
